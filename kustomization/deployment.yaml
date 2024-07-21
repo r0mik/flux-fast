@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: fast-api
+      app: podinfo
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fast-api
-        image: romanvy/fast
+        image: public.ecr.aws/e3x8z6z5/ffast
         resources:
           limits:
             memory: "256Mi"
